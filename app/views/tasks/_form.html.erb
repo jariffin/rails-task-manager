@@ -1,0 +1,9 @@
+<%= simple_form_for(@task) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :details, as: :text %>
+  <%= f.input :completed, as: :boolean, checked_value: true, unchecked_value: false %>
+  <%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
+
+
+<!-- https://github.com/heartcombo/simple_form -->

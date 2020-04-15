@@ -1,0 +1,17 @@
+
+
+<div class="container m-3">
+
+  <h3><%= @task.title %> </h3>
+
+  <p>
+    <hr>
+    <input type="checkbox" name="task" id="task" <%= 'checked' if @task.completed %>>
+    <label for="task" class="checkbox_label mx-3"><%= @task.details %></label>
+  </p>
+
+
+  <hr>
+  <p><%= link_to "Back to List", tasks_path %></p>
+  <p><%= link_to "Edit Task", edit_task_path %></p>
+</div>
